@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8"/>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="main.css"> 
+  </head>
+  <body>
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1354346847914489',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+     <header class="container">
+    <div class="row">
+      <h1 class="col-sm-4">Filer Transfer</a></h1>
+      <nav class="col-sm-8 text-right">
+       <a class="btn btn-primary" href="index.html" role="button">Accueil</a>
+       <a class="btn btn-primary" href="transfer.html" role="button">Transfer</a>
+       <a class="btn btn-primary" href="login.html" role="button">Login</a>
+       <a class="btn btn-primary" href="login.html" role="button">Sign up</a>
+      </nav>
+    </div>
+     </header>
+    <div>
+    <div>
+        <a target="_blank" title="Twitter" href="https://twitter.com/share?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>&via=korben" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"><img src="http://korben.info/wp-content/themes/korben2013/hab/twitter_icon.png" alt="Twitter" /></a>
+        <a target="_blank" title="Facebook" href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>&t=<?php the_title(); ?>" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"><img src="http://korben.info/wp-content/themes/korben2013/hab/facebook_icon.png" alt="Facebook" /></a>
+        <a target="_blank" title="Google +" href="https://plus.google.com/share?url=<?php the_permalink(); ?>&hl=fr" rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="http://korben.info/wp-content/themes/korben2013/hab/gplus_icon.png" alt="Google Plus" /></a>
+        <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink(); ?>&title=<?php the_title(); ?>" rel="nofollow" onclick="javascript:window.open(this.href, '','menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img src="http://korben.info/wp-content/themes/korben2013/hab/linkedin_icon.png" alt="Linkedin" /></a>
+    </div>
+</div>
+  </body>
+</html>
